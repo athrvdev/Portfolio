@@ -13,10 +13,12 @@ import Interests from './components/Interests';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
 import './index.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
     <div className="App font-sans bg-appleGray dark:bg-appleDarkGray text-appleDarkGray dark:text-appleGray">
+      <NavBar />
       <ThemeToggle />
       <Header />
       <PortfolioSummary />
