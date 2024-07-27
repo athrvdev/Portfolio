@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import headerBg from "../assets/headerBg.jpg"
+// bg-appleGray dark:bg-appleDarkGray
 const Header = () => {
-  return (
-    <header className="relative h-screen bg-cover bg-center bg-appleGray dark:bg-appleDarkGray" style={{ backgroundImage: 'url(/path/to/your/background/photo.jpg)' }}>
+  return (<>
+  <div className='w-full fixed top-0 left-0 h-screen bg-cover bg-center -z-10' style={{ backgroundImage: `url(${headerBg})` }}></div>
+    <header className=" w-full h-screen" >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative flex items-center justify-center h-full px-10" style={{
         fontSize:"6vh",
@@ -18,6 +20,7 @@ const Header = () => {
         </motion.h1>
       </div>
     </header>
+    </>
   );
 };
 

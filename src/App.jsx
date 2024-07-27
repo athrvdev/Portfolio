@@ -1,19 +1,10 @@
 import React from 'react';
 import Header from './components/Header';
-import PortfolioSummary from './components/PortfolioSummary';
-import WorkExperience from './components/WorkExperience';
-import Projects from './components/Projects';
-import Certifications from './components/Certifications';
-import TechnicalSkills from './components/TechnicalSkills';
-import SoftSkills from './components/SoftSkills';
-import Education from './components/Education';
-import Languages from './components/Languages';
-import PhotoGallery from './components/PhotoGallery';
-import Interests from './components/Interests';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
 import './index.css';
 import NavBar from './components/NavBar';
+import Body from './components/Body';
 
 function App() {
   return (
@@ -21,16 +12,7 @@ function App() {
       <NavBar />
       <ThemeToggle />
       <Header />
-      <PortfolioSummary />
-      <WorkExperience />
-      <Projects />
-      <Certifications />
-      <TechnicalSkills />
-      <SoftSkills />
-      <Education />
-      <Languages />
-      <PhotoGallery />
-      <Interests />
+      <Body />
       <Footer />
     </div>
   );
