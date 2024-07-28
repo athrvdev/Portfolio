@@ -3,7 +3,7 @@ import Resume from '../assets/Resume.pdf'
 
 const NavBar = () => {
   return (
-    <nav className="w-screen z-40 flex justify-evenly bg-slate-600 ">
+    <nav className="w-screen z-40 flex justify-evenly bg-cyan-500 dark:bg-emerald-800 ">
         <a>Projects</a>
         <a>Leetcode</a>
         <a>GitHub</a>

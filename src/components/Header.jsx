@@ -5,8 +5,8 @@ import headerBg from "../assets/headerBg.jpg"
 const Header = () => {
   return (<>
   <div className='w-full fixed top-0 left-0 h-screen bg-cover bg-center -z-10' style={{ backgroundImage: `url(${headerBg})` }}></div>
-    <header className=" w-full h-screen" >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+    <header className=" w-full h-screen pb-10" >
+      <div className="absolute h-full inset-0 bg-black opacity-50"></div>
       <div className="relative flex items-center justify-center h-full px-10" style={{
         fontSize:"6vh",
       }}>
