@@ -12,7 +12,7 @@ import Interests from './Interests';
 
 const Body = () => {
   return (
-    <div className='body bg-slate-100 dark:bg-slate-800 w-full'>
+    <div className='w-full body bg-slate-100 dark:bg-slate-800'>
     <PortfolioSummary />
       <WorkExperience />
       <Projects />
