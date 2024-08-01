@@ -4,11 +4,9 @@ import WorkExperience from './WorkExperience';
 import Projects from './Projects';
 import Certifications from './Certifications';
 import TechnicalSkills from './TechnicalSkills';
-import SoftSkills from './SoftSkills';
+
 import Education from './Education';
-import Languages from './Languages';
-import PhotoGallery from './PhotoGallery';
-import Interests from './Interests';
+
 
 const Body = () => {
   return (
@@ -18,11 +16,9 @@ const Body = () => {
       <Projects />
       <Certifications />
       <TechnicalSkills />
-      <SoftSkills />
+
       <Education />
-      <Languages />
-      <PhotoGallery />
-      <Interests />    
+       
     </div>
   )
 }

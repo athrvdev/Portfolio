@@ -10,7 +10,7 @@ const PortfolioSummary = () => {
       transition={{ duration: 0.7 }}
     >
       <h2 className="text-4xl font-bold">Portfolio Summary</h2>
-      <p className="mt-4">[Your portfolio summary]</p>
+      <p className="mt-4 text-pretty">Passionate Full Stack Developer with a strong foundation in Front-End Development Java Full Stack Development. I have hands-on experience at ShivaMatrix, where I design and implement scalable web applications using modern front-end and back-end technologies. My skills include Java, Spring Boot, Javascript, and ReactJS with a focus on optimizing performance and delivering high-quality, user-friendly solutions. I excel in collaborative environments and am committed to continuous learning and innovation in software development.</p>
     </motion.section>
   );
 };
