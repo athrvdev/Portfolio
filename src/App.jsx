@@ -1,19 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Header from './components/Header';
-import Footer from './components/Footer';
-
-import './index.css';
 import NavBar from './components/NavBar';
-import Body from './components/Body';
+import Footer from './components/Footer';
+import PortfolioSummary from './components/PortfolioSummary';
+import Projects from './components/Projects';
+import TechnicalSkills from './components/TechnicalSkills';
+import WorkExperience from './components/WorkExperience';
+import ThemeToggle from './components/ThemeToggle';
+import Education from './components/Education';
+import './index.css';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="font-sans App bg-appleGray dark:bg-appleDarkGray text-appleDarkGray dark:text-appleGray">
-      <NavBar />
-      
-      <Header />
-      <Body />
-      <Footer />
+    <div className={darkMode ? 'dark' : ''}>
+      <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+      <motion.div
+        className="app-container"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Header />
+        <NavBar />
+        <main className="main-content">
+          <PortfolioSummary />
+          <Projects />
+          <WorkExperience />
+          <TechnicalSkills />
+          <Education />
+        </main>
+        <Footer />
+      </motion.div>
     </div>
   );
 }

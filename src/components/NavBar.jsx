@@ -1,23 +1,23 @@
 import React from 'react';
-import ThemeToggle from './ThemeToggle';
+import { motion } from 'framer-motion';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav className="fixed top-0 left-0 z-10 w-full p-4 transition-colors duration-500 shadow-md bg-lightBg dark:bg-darkBg text-lightText dark:text-darkText">
-      <div className="container flex items-center justify-between mx-auto">
-        <div className="text-2xl font-bold">
-          Atharva Milind Kulkarni
-        </div>
-        <div className='flex justify-end'>
-          <a href="#portfolio" className="mx-2 hover:underline">Portfolio</a>
-          <a href="#work" className="mx-2 hover:underline">Work Experience</a>
-          <a href="#projects" className="mx-2 hover:underline">Projects</a>
-          <a href="#contact" className="mx-2 hover:underline">Contact</a>
-          <ThemeToggle />
-        </div>
-      </div>
+    <nav className="navbar">
+      <motion.ul
+        className="navbar-list"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <li className="navbar-item"><a href="#portfolio-summary">Summary</a></li>
+        <li className="navbar-item"><a href="#projects">Projects</a></li>
+        <li className="navbar-item"><a href="#skills">Skills</a></li>
+        <li className="navbar-item"><a href="#experience">Experience</a></li>
+        <li className="navbar-item"><a href="#contact">Contact</a></li>
+      </motion.ul>
     </nav>
   );
 };
 
-export default Navbar;
+export default NavBar;

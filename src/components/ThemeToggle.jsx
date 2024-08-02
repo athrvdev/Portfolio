@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/ThemeToggle.css'
 
 const ThemeToggle = () => {
   const [theme, setTheme] = useState('light');
@@ -16,12 +17,16 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="fixed z-50 p-2 transition-transform transform rounded-full shadow-lg bottom-6 bottom-10 h-11 w-11 bg-slate-950 dark:bg-red-200 text-appleDarkGray dark:text-appleGray hover:scale-105"
-    >
-      {theme === 'light' ? '🌙' : ' ☀️'}
-    </button>
+    <>
+
+    <label className='absolute inline-block w-16 top-8 right-4 switch h-9'>
+      <input  onClick={toggleTheme} class="opacity-0 w-0 h-0" type='checkbox'></input>
+      <span class="slider round absolute cursor-pointer top-0 left-0 bottom-0 right-0 bg-zinc-700 dark:bg-zinc-300 ">
+        {/* {theme === 'light' ? '🌙' : ' ☀️'} */}
+        </span>
+    </label>
+
+    </>
   );
 };
 

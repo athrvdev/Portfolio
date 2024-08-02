@@ -1,17 +1,20 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 
 const TechnicalSkills = () => {
+  const skills = [
+    'HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Express.js', 'PHP', 'MySQL',
+    'Tailwind CSS', 'Bootstrap', 'Spring Boot', 'Angular', 'TypeScript', 'Firebase',
+  ];
+
   return (
-    <motion.section 
-      className="p-10 bg-appleGray dark:bg-appleDarkGray text-appleDarkGray dark:text-appleGray text-center"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h2 className="text-4xl font-bold">Technical Skills</h2>
-      <p className="mt-4">[Your technical skills]</p>
-    </motion.section>
+    <section id="skills" className="technical-skills-section">
+      <h2 className="section-title">Technical Skills</h2>
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <span key={index} className="skill-badge">{skill}</span>
+        ))}
+      </div>
+    </section>
   );
 };
 
