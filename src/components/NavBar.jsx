@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { MdDownload } from 'react-icons/md';
+
 
 const NavBar = () => {
   return (
@@ -15,6 +17,7 @@ const NavBar = () => {
         <li className="navbar-item"><a href="#skills">Skills</a></li>
         <li className="navbar-item"><a href="#experience">Experience</a></li>
         <li className="navbar-item"><a href="#contact">Contact</a></li>
+        <li className="navbar-item"><button className='flex items-center' >Resume <MdDownload /></button></li>
       </motion.ul>
     </nav>
   );
