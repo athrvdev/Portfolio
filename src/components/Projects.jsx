@@ -40,7 +40,7 @@ const Projects = () => {
       <div className="projects-grid">
         {projectDetails.map((project, index) => (
           <div key={index} className="project-card">
-            <h3 className="project-title">{project.title}</h3>
+            <h3 className="font-bold underline transition-colors duration-500 cursor-pointer underline-offset-2 hover:text-cyan-800 project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <a href={project.links} className='relative bottom-0 text-emerald-600'>Learn more...</a>
           </div>

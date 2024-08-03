@@ -30,13 +30,17 @@ body {
 .header {
   text-align: center;
   margin-bottom: 40px;
-  height: 100vh;
-  justify-items: center;
+  height: 75vh;
+  padding-top: 80px;
+  border: 3px solid black;
 }
 
 .header-title {
-  font-size: 5rem;
-  font-weight: 700;
+  font-size: 7rem;
+  font-weight: 800;
+  line-height: 100px;
+ 
+  letter-spacing: -5px;
 }
 
 .navbar {
