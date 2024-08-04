@@ -12,8 +12,8 @@ const Header = () => {
         transition={{ duration: 1 }}
         whileTap={{ scale: 0.95 }} 
       >
-      <div children className='blur-card'></div>
-      </motion.h1>
+      <div children className='blur-card'>
+        
       <motion.h1
         className="header-title"
         initial={{ opacity: 0, x: -100, z:10 }}
@@ -33,6 +33,9 @@ const Header = () => {
         whileTap={{ scale: 0.95 }} 
       >
         Kulkarni
+      </motion.h1>
+      
+      </div>
       </motion.h1>
     </header>
     
