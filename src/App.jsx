@@ -9,12 +9,21 @@ import TechnicalSkills from './components/TechnicalSkills';
 import WorkExperience from './components/WorkExperience';
 import ThemeToggle from './components/ThemeToggle';
 import Education from './components/Education';
+import Message from './components/Message';
 import './index.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  // const [websiteView, setWebsiteView] = useState("hide");
+  // function viewWebsite(){
+    
+  // }
 
   return (
+    <>
+    <Message 
+    // setWebsiteView={setState} 
+    />
     <div className={darkMode ? 'dark' : ''}>
       <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
       <motion.div
@@ -35,6 +44,7 @@ function App() {
         <Footer />
       </motion.div>
     </div>
+    </>
   );
 }
 
