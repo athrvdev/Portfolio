@@ -24,7 +24,10 @@ function App() {
     <Message 
     // setWebsiteView={setState} 
     />
+
     <div className={darkMode ? 'dark' : ''}>
+      
+    <NavBar />
       <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
       <motion.div
         className="app-container"
@@ -33,7 +36,7 @@ function App() {
         transition={{ duration: 0.5 }}
       >
         <Header />
-        <NavBar />
+        
         <main className="main-content">
           <PortfolioSummary />
           <Projects />
