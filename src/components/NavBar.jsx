@@ -1,7 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { MdDownload } from 'react-icons/md';
 import '../assets/Resume.pdf';
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaDiagramProject } from 'react-icons/fa6';
+import { TbBrandLeetcode } from 'react-icons/tb';
 
 
 const NavBar = () => {
@@ -22,10 +24,11 @@ const NavBar = () => {
     <div className='sticky top-0 z-40'>
     <nav className="navbar duration-300 backdrop-filter backdrop-blur-lg backdrop-saturate-200 transition-shadow bg-opacity-90 items-center w-full flex justify-center gap-3 lg:gap-9 md:gap-6 sm:gap-3 bg-wash dark:bg-wash-dark dark:bg-opacity-95 px-1.5 lg:pr-24 lg:pl-24 lg:pe-5 lg:ps-4 z-40 h-12 ">
       
-        <a href="#projects">Projects</a>
-        <a target='blank' href="https://linkedin.com/in/atharva-kulkarni-cs06">Ln</a>
-        <a target='blank' href="https://leetcode.com/u/AtharvaKulkarni612">LT</a>
-        <a target='blank'  href="https://github.com/athrvdev">GitHub</a>
+        <a href="#projects"><FaDiagramProject /></a>
+        <a href="https://linkedin.com/in/atharva-kulkarni-cs06" className="social-link"><FaLinkedin /></a>
+        <a href="https://leetcode.com/u/AtharvaKulkarni612" className="social-link"><TbBrandLeetcode /></a>
+        <a href="https://github.com/athrvdev" className="social-link"><FaGithub /></a>
+        <a href="https://instagram.com/sarcastharv" className="social-link"><FaInstagram /></a>
         <a href="../assets/Resume.pdf" className='flex items-center' download={"../assets/Resume.pdf"}>Resume <MdDownload /></a>
       
     </nav>

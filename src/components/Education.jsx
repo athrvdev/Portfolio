@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 
 const EducationCard = ({ Degree, Course, College, City, Year }) => {
   return (
+
+    <section id='education' className='education-section'>
     <motion.div
       className="p-5 mb-6 rounded-lg shadow-md education-card bg-lightBg dark:bg-darkBg text-lightText dark:text-darkText"
       whileHover={{ scale: 1.05 }}
@@ -16,6 +18,7 @@ const EducationCard = ({ Degree, Course, College, City, Year }) => {
         <span className="highlight">{City}</span>, {Year}
       </p>
     </motion.div>
+    </section>
   );
 };
 

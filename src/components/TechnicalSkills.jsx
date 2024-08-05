@@ -2,8 +2,7 @@ import React from 'react';
 
 const TechnicalSkills = () => {
   const skills = [
-    'HTML5', 'CSS3', 'JavaScript', 'React', 'Node.js', 'Express.js', 'PHP', 'MySQL',
-    'Tailwind CSS', 'Bootstrap', 'Spring Boot', 'Angular', 'TypeScript', 'Firebase',
+    'HTML5', 'CSS3', 'JavaScript', 'React', 'PHP', 'MySQL','Tailwind CSS', 'Bootstrap', 'Chakra UI', 'Vite', 'Spring Boot', 'Hibernate', 'Firebase',
   ];
 
   return (

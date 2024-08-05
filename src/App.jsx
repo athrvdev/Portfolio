@@ -10,6 +10,7 @@ import WorkExperience from './components/WorkExperience';
 import ThemeToggle from './components/ThemeToggle';
 import Education from './components/Education';
 import Message from './components/Message';
+// import SphereWithPoints from './components/SphereWithPoints';
 import './index.css';
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <PortfolioSummary />
           <Projects />
           <WorkExperience />
+          {/* <SphereWithPoints /> */}
           <TechnicalSkills />
           <Education />
         </main>

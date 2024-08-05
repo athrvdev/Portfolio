@@ -22,7 +22,7 @@ const Header = () => {
          
         </motion.h1>
 
-        <motion.div className='w-full text-lg header-title-roles roles animated-roll'>
+        <motion.div className='w-full mb-5 text-lg lg:mb-10 header-title-roles roles animated-roll'>
             <h3>FRONT END WEB DEV</h3>
             <h3>JAVA FULL STACK</h3>
             <h3>PHOTOGRAPHER</h3>
