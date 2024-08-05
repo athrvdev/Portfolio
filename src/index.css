@@ -48,17 +48,28 @@ body {
   margin-top: -70px;
   padding-top: 0px;
   width: 100%;
-  /* background: var(--bg-background-gradient); */
+}
+
+.header-title-roles{
+  line-height: 1.5;
+  font-size: 1.8rem;
+  
+  h3{
+    margin-bottom: 5px;
+  }
 }
 
 .blur-card {
   /* max-width: 1400px; */
-  width: inherit;
+  width: 95%;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 
+  0 0 30px rgba(0, 255, 255, 0.4), 
+  0 0 40px rgba(0, 255, 255, 0.6), 
+  0 0 50px rgba(0, 255, 255, 0.8);
 }
 
 .header-title {
@@ -67,15 +78,17 @@ body {
   margin-bottom: 2rem;
   letter-spacing: -5px;
   line-height: 1;
-  background: -webkit-linear-gradient(135deg, var(--highlight-color), var(--bg-gradient-end));
+  background: -webkit-linear-gradient(25deg, var(--highlight-color), var(--bg-gradient-end));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 4px 3px 1px var(--text-color);
 }
 
 .header-title-roles h3 {
   text-align: left;
   font-size: 1.2rem;
   color: var(--text-color);
+  text-shadow: 2px 1px 10px var(--highlight-color);
 }
 
 .navbar a {
@@ -241,13 +254,25 @@ input:checked + .toggle-slider::before {
 }
 
 /* Media Queries for Fluid Responsive Design */
+@media(min-width: 564px ){
+
+  .header-title{
+    font-size: 1.5rem;
+  }
+  .header-title-roles{
+    font-size: 0.8rem;
+    line-height: 1.2;
+  }
+}
+
 @media (min-width: 640px) {
   .header-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .section-title {
     font-size: 1.2rem;
+
   }
 }
 
@@ -259,6 +284,10 @@ input:checked + .toggle-slider::before {
   .section-title {
     font-size: 1.5rem;
   }
+  .header-title-roles{
+    font-size: 1rem;
+    line-height: 1.2;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -268,5 +297,9 @@ input:checked + .toggle-slider::before {
 
   .section-title {
     font-size: 2rem;
+  }
+  .header-title-roles{
+    font-size: 1.3rem;
+    line-height: 1.4;
   }
 }
