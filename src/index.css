@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   scroll-behavior: smooth;
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: montserrat,'Inter', sans-serif;
   background: var(--bg-background-gradient);
   color: var(--text-color);
   transition: background-color 0.4s, color 0.3s;

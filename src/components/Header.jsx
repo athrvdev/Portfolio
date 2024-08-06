@@ -7,9 +7,10 @@ const Header = () => {
     visible: (i) => ({
       opacity: 1,
       x: 0,
-      transition: { delay: i * 0.2, duration: 1 },
+      transition: { delay: i * 0.6, duration: 1 },
     }),
   };
+  
 
   return (
     <header className="relative flex items-center justify-center overflow-hidden header header-container">
@@ -21,7 +22,7 @@ const Header = () => {
         animate={{ opacity: 1   }}
         transition={{ duration: 1 }}
       >
-        <div className="text-5xl font-bold text-center text-white transition-all duration-100000 header-title md:text-8xl lg:text-9xl">
+        <div className="text-5xl font-bold text-center text-white transition-all duration-1000 header-title md:text-8xl lg:text-9xl">
           {['ATHARVA', 'KULKARNI'].map((word, index) => (
             <motion.span
               key={word}

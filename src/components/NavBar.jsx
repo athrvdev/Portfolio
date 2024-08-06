@@ -25,11 +25,16 @@ const NavBar = () => {
     <nav className="navbar duration-300 backdrop-filter backdrop-blur-lg backdrop-saturate-200 transition-shadow bg-opacity-90 items-center w-full flex justify-center gap-3 lg:gap-9 md:gap-6 sm:gap-3 bg-wash dark:bg-wash-dark dark:bg-opacity-95 px-1.5 lg:pr-24 lg:pl-24 lg:pe-5 lg:ps-4 z-40 h-12 ">
       
         <a href="#projects"><FaDiagramProject /></a>
-        <a href="https://linkedin.com/in/atharva-kulkarni-cs06" className="social-link"><FaLinkedin /></a>
-        <a href="https://leetcode.com/u/AtharvaKulkarni612" className="social-link"><TbBrandLeetcode /></a>
-        <a href="https://github.com/athrvdev" className="social-link"><FaGithub /></a>
-        <a href="https://instagram.com/sarcastharv" className="social-link"><FaInstagram /></a>
-        <a href="../assets/Resume.pdf" className='flex items-center' download={"../assets/Resume.pdf"}>Resume <MdDownload /></a>
+        <a href="https://linkedin.com/in/atharva-kulkarni-cs06" title="LinkedIn : Atharva Kulkarni"
+        className="social-link"><FaLinkedin /></a>
+        <a href="https://leetcode.com/u/AtharvaKulkarni612" title="Leetcode : AtharvaK612" className="social-link"><TbBrandLeetcode /></a>
+        <a href="https://github.com/athrvdev" title="Github : athrvdev" className="social-link"><FaGithub /></a>
+        <a href="https://instagram.com/sarcastharv"
+        title="Instagram : sarcastharv"
+        className="social-link"><FaInstagram /></a>
+        <a target='blank' onClick={triggerDownload} 
+        title="Get my CV"
+        className='flex items-center font-normal cursor-pointer' >CV <MdDownload /></a>
       
     </nav>
     </div>
