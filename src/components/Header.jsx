@@ -13,7 +13,7 @@ const Header = () => {
   
 
   return (
-    <header className="relative flex items-center justify-center overflow-hidden header header-container">
+    <header className="relative flex items-start justify-center overflow-hidden header header-container">
       <motion.div
         className="p-10 transition-shadow duration-300 bg-white rounded-md shadow-lg blur-card bg-opacity-10 backdrop-filter backdrop-blur-lg backdrop-saturate-200"
         initial={{ opacity: 0, textShadow: 0
@@ -22,7 +22,7 @@ const Header = () => {
         animate={{ opacity: 1   }}
         transition={{ duration: 1 }}
       >
-        <div className="text-5xl font-bold text-center text-white transition-all duration-1000 header-title md:text-8xl lg:text-9xl">
+        <div className="text-5xl font-bold text-white transition-all duration-1000 header-title md:text-8xl lg:text-9xl">
           {['ATHARVA', 'KULKARNI'].map((word, index) => (
             <motion.span
               key={word}
@@ -37,12 +37,12 @@ const Header = () => {
           ))}
         </div>
 
-        <motion.div className='w-full mb-5 text-lg sm:text-xs lg:mb-10 header-title-roles roles animated-roll'>
+        {/* <motion.div className='w-full mb-5 text-lg sm:text-xs lg:mb-10 header-title-roles roles animated-roll'>
           <h3>FRONT END WEB DEV</h3>
           <h3>JAVA FULL STACK</h3>
           <h3>PHOTOGRAPHER</h3>
           <h3>FREELANCE DEVELOPER</h3>
-        </motion.div>
+        </motion.div> */}
         
       </motion.div>
     </header>

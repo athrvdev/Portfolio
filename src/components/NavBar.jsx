@@ -4,6 +4,7 @@ import '../assets/Resume.pdf';
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { FaDiagramProject } from 'react-icons/fa6';
 import { TbBrandLeetcode } from 'react-icons/tb';
+import { CiMail } from 'react-icons/ci';
 
 
 const NavBar = () => {
@@ -32,6 +33,7 @@ const NavBar = () => {
         <a href="https://instagram.com/sarcastharv"
         title="Instagram : sarcastharv"
         className="social-link"><FaInstagram /></a>
+        <a href="mailto:atharvamk6@gmail.com"><CiMail /> </a>
         <a target='blank' onClick={triggerDownload} 
         title="Get my CV"
         className='flex items-center font-normal cursor-pointer' >CV <MdDownload /></a>

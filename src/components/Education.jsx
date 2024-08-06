@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 const EducationCard = ({ Degree, Course, College, City, Year }) => {
   return (
 
-    <section id='education' className='education-section'>
+    <section id='education' className='m-5'>
     <motion.div
-      className="p-5 mb-6 rounded-lg shadow-md education-card bg-lightBg dark:bg-darkBg text-lightText dark:text-darkText"
+      className="p-6 rounded-lg shadow-md education-card bg-lightBg dark:bg-darkBg text-lightText dark:text-darkText"
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       transition={{ duration: 0.3 }}
@@ -48,7 +48,7 @@ const Education = () => {
   ];
 
   return (
-    <section className="relative py-16 education-section ">
+    <section className="relative education-section ">
       <motion.div
         className="absolute inset-0 education-background"
         initial={{ opacity: 0 }}
@@ -56,17 +56,11 @@ const Education = () => {
         transition={{ duration: 1 }}
         
       />
-      <motion.div
-        className="relative z-10 max-w-screen-lg px-4 mx-auto education-content sm:px-6 lg:px-8"
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
+      
         <h2 className="mb-12 text-3xl text-left section-title text-appleDarkGray dark:text-appleGray">
           My Education
         </h2>
-        <div className="grid grid-cols-1 gap-8 education-cards sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 education-cards sm:grid-cols-2 lg:grid-cols-3">
           {educationDetails.map((detail, index) => (
             <EducationCard
               key={index}
@@ -78,7 +72,7 @@ const Education = () => {
             />
           ))}
         </div>
-      </motion.div>
+      
     </section>
   );
 };

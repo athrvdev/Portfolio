@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-    {/* <Message /> */}
+    <Message />
 
     <div className={darkMode ? 'dark' : ''}>
       
