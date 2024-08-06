@@ -22,9 +22,7 @@ function App() {
 
   return (
     <>
-    <Message 
-    // setWebsiteView={setState} 
-    />
+    {/* <Message /> */}
 
     <div className={darkMode ? 'dark' : ''}>
       

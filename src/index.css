@@ -21,6 +21,10 @@ body {
   --bg-gradient-end: #EDEFF1;
   --bg-background-gradient: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
   --highlight-color: #007AFF;
+  --highlight-box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 
+  0 0 30px rgba(0, 255, 255, 0.4), 
+  0 0 40px rgba(0, 255, 255, 0.6), 
+  0 0 50px rgba(0, 255, 255, 0.8);
 }
 
 .dark {
@@ -30,12 +34,16 @@ body {
   --bg-gradient-end: #2B2B2D;
   --bg-background-gradient: linear-gradient(135deg, #1C1C1E, #2B2B2D);
   --highlight-color: #FF007A;
+  --highlight-box-shadow: 0 0 20px rgba(255, 0, 122, 0.1), 
+  0 0 30px rgba(255, 0, 122, 0.4), 
+  0 0 40px rgba(255, 0, 122, 0.6), 
+  0 0 50px rgba(255, 0, 122, 0.8);
 }
 
 .app-container {
   margin: 0 auto;
   padding: 20px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
 }
 
 .header {
@@ -44,9 +52,10 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 40px;
-  margin-top: -70px;
-  padding-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
 }
 
@@ -66,14 +75,11 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 15px;
   padding: 40px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), 
-  0 0 30px rgba(0, 255, 255, 0.4), 
-  0 0 40px rgba(0, 255, 255, 0.6), 
-  0 0 50px rgba(0, 255, 255, 0.8);
+  box-shadow: var(--highlight-box-shadow);
 }
 
 .header-title {
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 2rem;
   letter-spacing: -5px;
@@ -89,6 +95,7 @@ body {
   font-size: 1.2rem;
   color: var(--text-color);
   text-shadow: 2px 1px 10px var(--highlight-color);
+  font-weight: bold;
 }
 
 .navbar a {
@@ -103,7 +110,7 @@ body {
 }
 
 .section-title {
-  font-size: 0.5rem;
+  font-size: 1rem;
   margin-bottom: 20px;
   position: relative;
   text-align: center;
@@ -254,14 +261,26 @@ input:checked + .toggle-slider::before {
 }
 
 /* Media Queries for Fluid Responsive Design */
-@media(min-width: 564px ){
 
+@media(min-width: 10px){
   .header-title{
     font-size: 1.5rem;
   }
-  .header-title-roles{
+  .header-title-roles h3{
     font-size: 0.8rem;
-    line-height: 1.2;
+    line-height: 1rem;
+  }
+}
+@media(min-width: 400px){
+  .header-title{
+    font-size: 2.8rem;
+  }
+}
+
+@media(min-width: 564px ){  
+  .header-title-roles h3{
+    font-size: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -282,7 +301,7 @@ input:checked + .toggle-slider::before {
   }
 
   .section-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
   .header-title-roles{
     font-size: 1rem;
@@ -296,7 +315,7 @@ input:checked + .toggle-slider::before {
   }
 
   .section-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .header-title-roles{
     font-size: 1.3rem;
