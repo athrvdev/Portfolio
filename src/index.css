@@ -79,6 +79,7 @@ body {
   backdrop-filter: blur(20px);
   border-radius: 15px;
   padding: 40px;
+  padding-bottom: 80px;
   /* box-shadow: var(--highlight-box-shadow); */
 }
 
@@ -147,7 +148,6 @@ body {
   padding: 20px;
   border-radius: 8px;
   margin-bottom: 40px;
-  background: var(--bg-color);
 }
 
 .projects-grid {

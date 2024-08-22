@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { HiArrowCircleRight } from 'react-icons/hi';
 
-const Message = ({}) => {
+function Message(){
 
     const [msgDisplay, setMsgDisplay] = useState("flex");
 

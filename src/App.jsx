@@ -9,7 +9,7 @@ import TechnicalSkills from './components/TechnicalSkills';
 import WorkExperience from './components/WorkExperience';
 import ThemeToggle from './components/ThemeToggle';
 import Education from './components/Education';
-import Message from './components/Message';
+// import Message from './components/Message';
 // import SphereWithPoints from './components/SphereWithPoints';
 import './index.css';
 
@@ -17,12 +17,12 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   // const [websiteView, setWebsiteView] = useState("hide");
   // function viewWebsite(){
-    
   // }
+  // const {//scrollYProgress} = useScroll();
 
   return (
     <>
-    <Message />
+    {/* <Message /> */}
 
     <div className={darkMode ? 'dark' : ''}>
       
@@ -32,7 +32,7 @@ function App() {
         className="app-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{type:"spring", duration: 0.5 }}
       >
         <Header />
         

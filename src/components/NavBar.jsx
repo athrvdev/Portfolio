@@ -34,7 +34,7 @@ const NavBar = () => {
         title="Instagram : sarcastharv"
         className="social-link"><FaInstagram /></a>
         <a href="mailto:atharvamk6@gmail.com"><CiMail /> </a>
-        <a target='blank' onClick={triggerDownload} 
+        <a href="#header" target='blank' onClick={triggerDownload} 
         title="Get my CV"
         className='flex items-center font-normal cursor-pointer' >CV <MdDownload /></a>
       
