@@ -9,21 +9,13 @@ import TechnicalSkills from './components/TechnicalSkills';
 import WorkExperience from './components/WorkExperience';
 import ThemeToggle from './components/ThemeToggle';
 import Education from './components/Education';
-// import Message from './components/Message';
-// import SphereWithPoints from './components/SphereWithPoints';
 import './index.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  // const [websiteView, setWebsiteView] = useState("hide");
-  // function viewWebsite(){
-  // }
-  // const {//scrollYProgress} = useScroll();
-
+   
   return (
     <>
-    {/* <Message /> */}
-
     <div className={darkMode ? 'dark' : ''}>
       
     <NavBar />
@@ -40,7 +32,6 @@ function App() {
           <PortfolioSummary />
           <Projects />
           <WorkExperience />
-          {/* <SphereWithPoints /> */}
           <TechnicalSkills />
           <Education />
         </main>

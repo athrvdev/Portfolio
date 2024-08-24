@@ -1,16 +1,19 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 const PortfolioSummary = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   // Typing effect for the description
   const descriptionVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.2,
-        duration: 1,
-        staggerChildren: 0.04,
+        delay: 0.1,
+        duration: 0.2,
+        staggerChildren: 0.01,
       },
     },
   };
@@ -37,13 +40,14 @@ const PortfolioSummary = () => {
   return (
     <section
       id="portfolio-summary"
-      className="relative py-16 mt-8 portfolio-summary education-section  from-appleGray to-lightBg dark:from-darkBg dark:to-appleDarkGray text-pretty"
+      ref={ref}
+      className="relative py-16 mt-8 portfolio-summary education-section from-appleGray to-lightBg dark:from-darkBg dark:to-appleDarkGray text-pretty"
     >
       <motion.h2
         className="section-title"
         variants={titleVariants}
         initial="hidden"
-        animate="visible"
+        animate={isInView ? 'visible' : 'hidden'}
       >
         ABOUT ME
       </motion.h2>
@@ -52,7 +56,7 @@ const PortfolioSummary = () => {
         className="section-description"
         variants={descriptionVariants}
         initial="hidden"
-        animate="visible"
+        animate={isInView ? 'visible' : 'hidden'}
       >
         {"Passionate and results-driven Full Stack Developer with a strong foundation in Java Full Stack Development. I have hands-on experience at ShivaMatrix Pvt. Ltd., where I design and implement scalable web applications using modern front-end and back-end technologies. I excel in collaborative environments and am committed to continuous learning and innovation in software development.".split("").map((char, index) => (
           <motion.span key={index} variants={letterVariants}>

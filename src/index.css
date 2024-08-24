@@ -73,14 +73,12 @@ body {
 }
 
 .blur-card {
-  
   width: 100%;
-  background: var(--bg-color);
+  background: transparent;
   backdrop-filter: blur(20px);
-  border-radius: 15px;
+  border-radius: 2.5em;
   padding: 40px;
   padding-bottom: 80px;
-  /* box-shadow: var(--highlight-box-shadow); */
 }
 
 .header-title {
@@ -262,6 +260,13 @@ body {
 
 input:checked + .toggle-slider::before {
   transform: translateX(25px);
+}
+
+.project-card-expanded{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
 }
 
 /* Media Queries for Fluid Responsive Design */
