@@ -1,0 +1,120 @@
+@import url('https://fonts.cdnfonts.com/css/meldina');
+@import url('https://fonts.cdnfonts.com/css/fjalla-one-2');
+@import url('https://fonts.cdnfonts.com/css/templar-shield');
+
+.loader-font{
+    font-family: 'Templar Shield', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cursor-animation{
+    animation : cursor-blink 1.3s infinite linear;
+}
+.subtext-font-primary{
+    font-family: 'Fjalla One', sans-serif;
+}
+.subtext-font-secondary{
+    font-family: 'Meldina', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.loader-animation{
+    animation : blink 0.5s infinite linear;
+}
+.button-animation{
+    animation : button-blink 1s infinite ease-in;
+}
+
+@keyframes border-beam {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+  }
+  
+.border-beam {
+    position: absolute;
+    inset: 0;
+    border: 2px solid transparent;
+    border-radius: inherit;
+    mask: linear-gradient(transparent, transparent),
+          linear-gradient(white, white);
+    mask-composite: intersect;
+  }
+  
+.border-beam::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: inherit;
+    background: linear-gradient(to left, var(--color-from), var(--color-to), transparent);
+    animation: border-beam var(--duration) linear infinite;
+    animation-delay: var(--delay);
+  }
+
+@keyframes cursor-blink{
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity : 100%;
+    }
+    75%{
+        opacity : 100%;
+    }
+    100%{
+        opacity : 0%;
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity: 60%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 60%;
+    }
+}
+
+@keyframes button-blink{
+    0%{
+        opacity: 80%;
+    }
+    20%{
+        opacity: 95%;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 80%;
+    }
+}
+.heading{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    gap: 0px;
+    width: 100%;
+    .heading-name{
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            width: fit-content;
+            margin: 0px;
+            &:nth-child(1){
+                margin-left: -15px;
+
+            }
+            &:nth-child(2){
+                margin-right: -15px;
+            }
+        }
+    }
+
+    
+}
