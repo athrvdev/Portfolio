@@ -20,6 +20,14 @@
 .button-animation{
     animation : button-blink 1s infinite ease-in;
 }
+.logo-animation:hover{
+    animation: rotate-logo 1s ease-in-out;
+
+}
+@keyframes rotate-logo {
+    from{ rotate: 0deg} 
+    to{rotate : 1080deg; }
+}
 
 @keyframes border-beam {
     0% { transform: translateX(0); }

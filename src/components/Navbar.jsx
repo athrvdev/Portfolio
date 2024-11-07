@@ -22,12 +22,12 @@ const navVariant = {
 
 const NavBar = ({type='horizontal', isDarkMode, toggleTheme }) => {
   return (
-    <nav className={`fixed right-0 ${type === 'vertical' ? 'top-36 dark:bg-gray-600 bg-gray-300 transform -translate-y-1/2 space-y-4 rounded' : 'flex fixed top-2 right-0 transform z-50 text-zinc-500 dark:text-zinc-100'}  `}>
+    <nav className={`flex flex-col items-center justify-between border-b-2 delay-1000 dark:border-slate-700 border-slate-300 text-zinc-500 dark:text-zinc-100 backdrop-filter backdrop-blur-lg bg-glass dark:bg-glass-dark fixed top-0 left-0 w-fit h-full z-40 py-60  border-r `}>
       {[
         { title: 'Home', to: '/', icon: <FaHome /> },
         { title: 'Projects/Work', to: '/projects', icon: <FaProjectDiagram /> },
-        { title: 'About me', to: '/about', icon: <IoMdPerson /> },
-        { title: 'Contact me', to: '/contact', icon: <FaAddressCard /> },
+        { title: 'About me', to: '/about', icon: <FaAddressCard /> },
+        { title: 'Contact me', to: '/contact', icon: <IoMdPerson /> },
         { title: 'View my CV/Resume', to: '/resume', icon: <FaFileDownload /> }
       ].map((link, index) => (
         <motion.span
@@ -40,7 +40,7 @@ const NavBar = ({type='horizontal', isDarkMode, toggleTheme }) => {
           <Link
             title={link.title}
             to={link.to}
-            className="block py-2 px-4 rounded hover:bg-gray-300 dark:hover:bg-gray-700"
+            className="block py-2 px-4 rounded transition-all duration-150 delay-200 hover:bg-gray-300 dark:hover:bg-gray-700"
           >
             {link.icon}
           </Link>

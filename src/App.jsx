@@ -14,6 +14,7 @@ import Dock from './components/Dock'
 import MouseTracker from './components/MouseTracker'
 import { AnimatePresence, motion } from 'framer-motion'
 import Particles from './components/ParticleEffect'
+import ErrorPage from './pages/ErrorPage'
 
 const AppContent = () => {
   const { darkMode, toggleTheme } = useTheme();
@@ -65,7 +66,7 @@ const AppContent = () => {
   return (
     <div className={`min-w-96 min-h-[100vh] bg-[#bcc1cd fff 1turn)] text-gray-800 dark:bg-gray-900 dark:text-white transition-colors`}>
       <Particles
-        className="absolute inset-0"
+        className="fixed inset-0"
         quantity={200}
         size={0.5}
         staticity={60}
@@ -101,6 +102,7 @@ const AppContent = () => {
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/resume" element={<Resume />} />
+                <Route path="*" element={<ErrorPage />} />
               </Routes>
             </motion.div>
           </AnimatePresence>

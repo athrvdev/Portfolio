@@ -3,6 +3,7 @@ import BoxReveal from "../components/BoxReveal";
 import { FaGithub } from "react-icons/fa";
 import ProjectCard from "../components/ProjectCard";
 import { useTheme } from "../context/ThemeContext";
+import BlurFade from "../components/BlurFade";
 
 const projects = [
   {
@@ -53,7 +54,17 @@ export default function Projects() {
   const { darkMode, toggleTheme } = useTheme();
   console.log(darkMode);
   return (
-    <div className="flex flex-wrap justify-center min-h-screen gap-8 p-8  mt-36 rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
+    <div className="flex flex-wrap justify-center min-h-screen gap-8 p-8  mt-28 rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
+      <h3 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+         <BlurFade delay={0.6}><span className=''>Check out my latest work
+          </span>
+          </BlurFade>
+        </h3>
+        <BlurFade>
+          <div className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">
+          I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
+          </div>
+        </BlurFade>
       {projects.map((project, index) => (
         <ProjectCard key={index}
         gradientColor={darkMode ? "#26262695" : "#d9d9d9b3"} className="w-full min-w-[280px] cursor-pointer shadow-2xl m-4 lg:w-2/5 xl:w-5/12 h-fit max-w-lg p-8">

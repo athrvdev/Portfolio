@@ -191,7 +191,7 @@ const Particles = ({
 
   return (
     <div
-      className={`pointer-events-none h-[${window.innerHeight}px] particle-effect ${className}`}
+      className={`pointer-events-none top-0 left-0 size-full z-0 h-[${window.innerHeight}px] particle-effect ${className}`}
       ref={canvasContainerRef}
       aria-hidden="true"
     >
