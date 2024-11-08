@@ -22,7 +22,7 @@ const navVariant = {
 
 const NavBar = ({type='horizontal', isDarkMode, toggleTheme }) => {
   return (
-    <nav className={`flex flex-col items-center justify-between border-b-2 delay-1000 dark:border-slate-700 border-slate-300 text-zinc-500 dark:text-zinc-100 backdrop-filter backdrop-blur-lg bg-glass dark:bg-glass-dark fixed top-0 left-0 w-fit h-full z-40 py-60  border-r `}>
+    <nav className={`flex flex-col items-center justify-between border-b-2 delay-300 dark:border-slate-700 border-slate-300 text-zinc-500 dark:text-zinc-100 backdrop-filter backdrop-blur-lg bg-glass dark:bg-glass-dark fixed top-0 left-0 w-fit h-full z-40 py-60  border-r `}>
       {[
         { title: 'Home', to: '/', icon: <FaHome /> },
         { title: 'Projects/Work', to: '/projects', icon: <FaProjectDiagram /> },

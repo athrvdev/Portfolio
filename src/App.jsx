@@ -51,8 +51,8 @@ const AppContent = () => {
   useEffect(() => {
     // Set screen resize event
     window.onresize = () => {
-      window.innerWidth > 425 && setShowNav({navType:'horizontal', isOpen: true, width: window.innerWidth });
-      window.innerWidth <= 425 && setShowNav({navType:'vertical', isOpen: false, width: window.innerWidth });
+      window.innerWidth > 500 && setShowNav({navType:'horizontal', isOpen: true, width: window.innerWidth });
+      window.innerWidth <= 500 && setShowNav({navType:'vertical', isOpen: false, width: window.innerWidth });
     };
     // Set cursor position on mouse move
     window.onmousemove = (e) => {

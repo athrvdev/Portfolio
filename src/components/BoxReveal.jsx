@@ -6,6 +6,8 @@ export const BoxReveal = ({
   width = "fit-content",
   boxColor,
   duration,
+  slideDelay = 0.25,
+  boxDelay = 0,
 }) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
@@ -32,7 +34,7 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: duration ? duration : 0.5, delay: 0.25 }}
+        transition={{ duration: duration ? duration : 0.5, delay: slideDelay }}
       >
         {children}
       </motion.div>
@@ -44,7 +46,7 @@ export const BoxReveal = ({
         }}
         initial="hidden"
         animate={slideControls}
-        transition={{ duration: duration ? duration : 0.5, ease: "easeIn" }}
+        transition={{ duration: duration ? duration : 0.5, delay: boxDelay , ease: "easeIn" }}
         style={{
           position: "absolute",
           top: 4,

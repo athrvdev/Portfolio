@@ -25,7 +25,7 @@ const Footer = () => (
            <a href="https://instagram.com/sarcastharv/" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><FaInstagram /></a>
           </BlurFade>
           <BlurFade    delay={1}>
-            <a href="mailto:atharvamk6@gmail.com" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300 z-20"><IoIosMail /></a>
+            <a href="mailto:atharvamk6@gmail.com" className="text-[16px]  text-gray-700 hover:text-indigo-500 dark:text-gray-300 z-20"><IoIosMail /></a>
           </BlurFade>
         </div>
       </BlurFade>

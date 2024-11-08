@@ -8,12 +8,12 @@ const SkillCard = ({
 }) => {
   return (
     <figure
-      className={`relative w-28 py-2 cursor-pointer overflow-hidden bg-gray-200 dark:bg-[#262626] rounded-xl ${className}`}
+      className={`relative w-28 py-2 cursor-pointer overflow-hidden bg-neutral-100 transform hover:-translate-y-1 hover:scale-110 shadow-md shadow-neutral-300 dark:shadow-neutral-800 delay-200 duration-100 linear  transition-all  text-black dark:bg-neutral-900 rounded-xl ${className} skill-card`}
     >
-      <div className="flex flex-col items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
+      <div className="skill-container flex flex-col items-center gap-2">
+        <img className="skill-img rounded-full  shadow-black" width="32" height="32" alt="" src={img} />
         
-          <figcaption className="text-sm font-medium dark:text-white">
+          <figcaption className="skill-name text-sm font-medium dark:text-white p-[2px]">
             {name}
           </figcaption>
       </div>
