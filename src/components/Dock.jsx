@@ -31,7 +31,7 @@ const Dock = ({navData, handleNavData}) => {
         initial={{y : 170, opacity : 0.6}}
         animate={{y : -3, opacity : 1}}
         transition={{ease : 'easeIn', duration : 0.5}}
-        className='block w-8 p-4 pr-8 rounded transition-all duration-100'>
+        className='block w-8 p-4 pr-8 cursor-pointer rounded transition-all duration-100'>
         <> {navData.isOpen ? <AiOutlineClose onClick={()=>{
           handleNavData({
             ...navData, isOpen : !navData.isOpen
