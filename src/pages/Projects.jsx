@@ -81,7 +81,7 @@ export default function Projects() {
           </BoxReveal>
 
           <BoxReveal boxColor={darkMode ? "#5046e6" : "#181818a9"} duration={0.5}>
-            <a href={project.links} className="mt-[1.6rem] flex gap-1 p-2 rounded-md text-white hover:bg-[#4037b5] hover:bg-[#2c2c2cf6] bg-[#181818a9] dark:bg-[#5046e6]">View Project <FaGithub className="mt-1" /></a>
+            <a href={project.links} className="mt-[1.6rem] flex gap-1 p-2 rounded-md text-white hover:bg-[#4037b5] hover:bg-[#2c2c2cf6] bg-[#181818a9] dark:bg-[#5046e6] delay-200 transition-all ease-linear">View Project <FaGithub className="mt-1" /></a>
           </BoxReveal>
         </ProjectCard>
       ))}

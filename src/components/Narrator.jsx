@@ -42,9 +42,7 @@ const Narrator = ({inputText, className}) => {
     let [start, highlight, finish] = splitText(text, from, to);
 
     return (
-      <div className='card' style={{width : 500,
-        textAlign : 'center'
-      }}>
+      <div className='text-center'>
         <span className='dark:text-slate-300 text-slate-800 text-xl my-2 text-center font-bold tracking-tighter sm:text-3xl'>{!end && highlight}</span>
       </div>
     )

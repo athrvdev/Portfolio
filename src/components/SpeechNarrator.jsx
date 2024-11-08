@@ -9,11 +9,11 @@ const robotStyle ={
 
 const SpeechNarrator = ({HighEl, showPlay, text, highSec, handlePause, handlePlay}) => {
   return (
-    <div title='Click the robot to make it speak ' className='container grid place-items-center my-3 gap-2'>
-       
+    <div title='Click the robot to make it speak ' className='container h-[30vh] my-3 gap-2 text-center transform translate-y-12'>
+       <div className='w-full flex justify-center'>
         {showPlay ?<AiFillRobot style={robotStyle} onClick={handlePause} className="text-indigo-500" /> :
         <AiOutlineRobot style={robotStyle} className='dark:text-neutral-100 text-neutral-900' onClick={handlePlay} />}
-
+      </div>
         <HighEl text={text} {...highSec} />
     </div>
   )

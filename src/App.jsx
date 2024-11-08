@@ -15,6 +15,7 @@ import MouseTracker from './components/MouseTracker'
 import { AnimatePresence, motion } from 'framer-motion'
 import Particles from './components/ParticleEffect'
 import ErrorPage from './pages/ErrorPage'
+import ScrollToTop from './components/ScrollToTop'
 
 const AppContent = () => {
   const { darkMode, toggleTheme } = useTheme();
@@ -28,6 +29,8 @@ const AppContent = () => {
   });
   const location = useLocation();
 
+
+
   useEffect(() => {
     // Loader counter
     if (loading) {
@@ -37,7 +40,7 @@ const AppContent = () => {
             clearInterval(interval);
             setTimeout(()=>{
               setLoading(false)
-            }, 500);
+            }, 400);
             ; // Stop loading when counter hits 100
             return 100;
           }
@@ -65,6 +68,7 @@ const AppContent = () => {
 
   return (
     <div className={`min-w-96 min-h-[100vh] bg-[#bcc1cd fff 1turn)] text-gray-800 dark:bg-gray-900 dark:text-white transition-colors`}>
+      <ScrollToTop path={location} />
       <Particles
         className="fixed inset-0"
         quantity={200}

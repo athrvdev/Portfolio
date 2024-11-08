@@ -81,7 +81,7 @@ const Home = () => {
       >
         <Header />
         <BlurFade delay={0.7}>
-        <p className="max-w-xl lg:pl-28 sm:pl-8 mb-10 w-full text-balance text-base tracking-tight dark:font-medium text-center md:text-lg">Crafting elegant solutions with creativity.</p>
+        <p className="max-w-xl lg:pl-28 sm:pl-8 mb-5 w-full text-balance text-base tracking-tight dark:font-medium text-center md:text-lg">Crafting elegant solutions with creativity.</p>
         </BlurFade>
         <BlurFade delay={1}>
 
@@ -103,20 +103,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{/* <section className="w-full mt-20">
-        <TextRevealByWord
-          className="z-10 flex h-fit items-center justify-center rounded-lg text-sm tracking-tight text-gray-600 dark:text-gray-400"
-          text={`I am Atharva Kulkarni, a passionate Full Stack Developer with a knack for creating immersive digital experiences. Passionate and results-driven Full Stack Developer with a strong foundation in Java Full Stack Development.`}
-        />
-      </section>
-
-      <TextRevealByWord
-        className="z-10 flex h-fit items-center justify-center rounded-lg text-sm tracking-tight text-gray-600 dark:text-gray-400"
-        text="I have hands-on experience at ShivaMatrix Pvt. Ltd., where I design and implement scalable web applications using modern front-end and back-end technologies. I excel in collaborative environments and am committed to continuous learning and innovation in software development."
-      />
-
-      <TextRevealByWord
-        className="z-10 flex h-fit items-center justify-center rounded-lg text-sm tracking-wide text-gray-600 dark:text-gray-400"
-        text="Skilled in React, Node.js, Spring Boot, and creating user-centric applications."
-      /> */}
