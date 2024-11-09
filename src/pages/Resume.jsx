@@ -15,7 +15,7 @@ const Resume = () => {
   }
 
   return (
-    <div className="flex items-center text-center flex-col min-h-screen gap-8 p-8 my-28 rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
+    <div className="flex items-center text-center flex-col min-h-screen gap-8 p-8 my-28 -ml-8 sm:ml rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
     <div className='w-full grid place-items-center'>
     <h3 className="text-3xl font-bold mb-5 tracking-tighter sm:text-5xl">
       <BlurFade inView={true}  delay={0.6}><span className=''>

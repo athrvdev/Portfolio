@@ -62,7 +62,7 @@ useEffect(()=>{
   }, [])
 
   return (
-    <div className="grid place-items-center min-h-screen gap-8 p-8  mt-28 rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
+    <div className="grid place-items-center min-h-screen gap-8 p-8 -ml-8 sm:ml-0 mt-28 rounded-lg backdrop-filter text-wrap backdrop-blur-lg bg-glass dark:bg-glass-dark w">
       <div>
       <h3 className="text-3xl mb-12 font-bold tracking-tighter sm:text-5xl">
          <BlurFade delay={0.6}><span className=''>Get in touch with me...

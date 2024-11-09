@@ -12,20 +12,20 @@ const Footer = () => (
     <BlurFade >
         <div className="flex gap-2 fixed -bottom-2 right-4 text-md">
           <BlurFade   delay={0.2}>
-            <a href="https://github.com/athrvdev" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><FaGithub /></a>
+            <a target='_blank' href="https://github.com/athrvdev" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><FaGithub /></a>
           </BlurFade>
           <BlurFade    delay={0.4}>
-            <a href="https://linkedin.com/in/atharva-kulkarni-cs06" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300">
+            <a target='_blank' href="https://linkedin.com/in/atharva-kulkarni-cs06" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300">
             <FaLinkedinIn /></a>
             </BlurFade>
           <BlurFade    delay={0.6}>
-            <a href="https://leetcode.com/u/AtharvaKulkarni612/" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><SiLeetcode /></a>
+            <a target='_blank' href="https://leetcode.com/u/AtharvaKulkarni612/" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><SiLeetcode /></a>
           </BlurFade>
           <BlurFade    delay={0.8}>
-           <a href="https://instagram.com/sarcastharv/" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><FaInstagram /></a>
+           <a target='_blank' href="https://instagram.com/sarcastharv/" className="text-gray-700 hover:text-indigo-500 dark:text-gray-300"><FaInstagram /></a>
           </BlurFade>
           <BlurFade    delay={1}>
-            <a href="mailto:atharvamk6@gmail.com" className="text-[16px]  text-gray-700 hover:text-indigo-500 dark:text-gray-300 z-20"><IoIosMail /></a>
+            <a target='_blank' href="mailto:atharvamk6@gmail.com" className="text-[16px]  text-gray-700 hover:text-indigo-500 dark:text-gray-300 z-20"><IoIosMail /></a>
           </BlurFade>
         </div>
       </BlurFade>

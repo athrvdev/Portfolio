@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
-import TextRevealByWord from "../components/TextReveal";
 import BlurFade from "../components/BlurFade";
 import { Link } from "react-router-dom";
 import { FaArrowCircleRight } from "react-icons/fa";

@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { FaArrowCircleRight } from "react-icons/fa";
 import TypingEffect from './TypingEffect';
-import BorderBeam from './BorderBeam';
 import BlurFade from './BlurFade';
 
 const Header = () => {
