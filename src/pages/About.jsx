@@ -46,7 +46,7 @@ const About = () => {
         </BlurFade>
       </div>
 
-      <div className="relative flex h-fit h-[100vh] w-full flex-col items-center justify-center mt-[20vh] overflow-hidden rounded-lg bg-background">
+      <div className="relative flex h-[100vh] w-full flex-col items-center justify-center mt-[20vh] overflow-hidden rounded-lg bg-background">
       <Narrator className={'z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-white'} inputText={`Nice to meet you! I am Atharva, a Full Stack Developer. I'm passionate about both web design and web development. I built scalable web apps using modern front end and back end technologies. I'm a Full Stack Developer skilled in Java Full Stack development with hands-on experience. I specialize in building scalable web apps using modern front-end and back-end technologies.`} />
       <Ripple />
     </div>
